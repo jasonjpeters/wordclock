@@ -5,15 +5,12 @@
 
         var time,
             hour,
-            minute,
-            seconds,
-            interval;
+            minute;
 
         function getTime(){
             time    = new Date();
             hour    = time.getHours() >= 12 ? time.getHours() - 12: time.getHours();
             minute  = time.getMinutes();
-            seconds = time.getSeconds();
         }
 
         function round5(x){
