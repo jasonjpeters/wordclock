@@ -1,0 +1,41 @@
+html,
+body {
+    height: 100%;
+    background-color: #222;
+    color: rgba(255,255,255,0.25);
+    animation-name: on;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    padding: 3%;
+}
+
+#clock {
+    max-width: 800px;
+}
+
+#clock div {
+    line-height: 60px;
+    font-family: font-family: 'Ubuntu Mono', monospace;
+}
+
+.on {
+    color: #fff;
+    text-shadow: 0 0 2px #fff, 0 0 4px #228dff, 0 0 6px #228dff, 0 0 8px #228dff;
+    font-weight: 700;
+    animation-name: on;
+    animation-duration: 1s;
+}
+
+@keyframes on {
+    from {
+        color: rgba(255,255,255,0.25);
+        text-shadow: none;
+        font-weight: 300;
+    }
+
+    to {
+        color: #fff;
+        text-shadow: 0 0 2px #fff, 0 0 4px #228dff, 0 0 6px #228dff, 0 0 8px #228dff;
+        font-weight: 700;
+    }
+}

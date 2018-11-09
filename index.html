@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Word Clock</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu+Mono:400,400i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+
+    <div class="container text-center">
+        <div id="time"></div>
+    </div>
+
+    <div id="clock" class="container">
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter hour T 0">T</div>
+            <div class="col-1 letter hour W 0">W</div>
+            <div class="col-1 letter hour E 0">E</div>
+            <div class="col-1 letter hour L 0">L</div>
+            <div class="col-1 letter hour V 0">V</div>
+            <div class="col-1 letter hour E 0 8">E</div>
+            <div class="col-1 letter hour I 8">I</div>
+            <div class="col-1 letter hour G 8">G</div>
+            <div class="col-1 letter hour H 8">H</div>
+            <div class="col-1 letter hour T 8">T</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter hour E 11">E</div>
+            <div class="col-1 letter hour L 11">L</div>
+            <div class="col-1 letter hour E 11">E</div>
+            <div class="col-1 letter hour V 11">V</div>
+            <div class="col-1 letter hour E 11">E</div>
+            <div class="col-1 letter hour N 11 9">N</div>
+            <div class="col-1 letter hour I 9">I</div>
+            <div class="col-1 letter hour N 9">N</div>
+            <div class="col-1 letter hour E 9">E</div>
+            <div class="col-1 letter hour R">R</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter hour F 5">F</div>
+            <div class="col-1 letter hour I 5">I</div>
+            <div class="col-1 letter hour V 5">V</div>
+            <div class="col-1 letter hour E 5">E</div>
+            <div class="col-1 letter hour T 2">T</div>
+            <div class="col-1 letter hour W 2">W</div>
+            <div class="col-1 letter hour O 2">O</div>
+            <div class="col-1 letter hour O 1">O</div>
+            <div class="col-1 letter hour N 1">N</div>
+            <div class="col-1 letter hour E 1">E</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter hour S 6">S</div>
+            <div class="col-1 letter hour I 6">I</div>
+            <div class="col-1 letter hour X 6">X</div>
+            <div class="col-1 letter hour S">S</div>
+            <div class="col-1 letter hour S 7">S</div>
+            <div class="col-1 letter hour E 7">E</div>
+            <div class="col-1 letter hour V 7">V</div>
+            <div class="col-1 letter hour E 7">E</div>
+            <div class="col-1 letter hour N 7">N</div>
+            <div class="col-1 letter hour N">N</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter hour T 3">T</div>
+            <div class="col-1 letter hour H 3">H</div>
+            <div class="col-1 letter hour R 3">R</div>
+            <div class="col-1 letter hour E 3">E</div>
+            <div class="col-1 letter hour E 3">E</div>
+            <div class="col-1 letter hour Y">Y</div>
+            <div class="col-1 letter hour F 4">F</div>
+            <div class="col-1 letter hour O 4">O</div>
+            <div class="col-1 letter hour U 4">U</div>
+            <div class="col-1 letter hour R 4">R</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter hour T 10">T</div>
+            <div class="col-1 letter hour E 10">E</div>
+            <div class="col-1 letter hour N 10">N</div>
+            <div class="col-1 letter hour N">N</div>
+            <div class="col-1 letter minute T 30 35">T</div>
+            <div class="col-1 letter minute H 30 35">H</div>
+            <div class="col-1 letter minute I 30 35">I</div>
+            <div class="col-1 letter minute R 30 35">R</div>
+            <div class="col-1 letter minute T 30 35">T</div>
+            <div class="col-1 letter minute Y 30 35">Y</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter minute R">R</div>
+            <div class="col-1 letter minute T 10">T</div>
+            <div class="col-1 letter minute E 10">E</div>
+            <div class="col-1 letter minute N 10">N</div>
+            <div class="col-1 letter minute T 20 25">T</div>
+            <div class="col-1 letter minute W 20 25">W</div>
+            <div class="col-1 letter minute E 20 25">E</div>
+            <div class="col-1 letter minute N 20 25">N</div>
+            <div class="col-1 letter minute T 20 25">T</div>
+            <div class="col-1 letter minute Y 20 25">Y</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter minute F 15">F</div>
+            <div class="col-1 letter minute I 15">I</div>
+            <div class="col-1 letter minute F 15">F</div>
+            <div class="col-1 letter minute T 15">T</div>
+            <div class="col-1 letter minute E 15">E</div>
+            <div class="col-1 letter minute E 15">E</div>
+            <div class="col-1 letter minute N 15">N</div>
+            <div class="col-1 letter minute N">N</div>
+            <div class="col-1 letter minute T">T</div>
+            <div class="col-1 letter minute O 0 5">O</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter minute C 0">C</div>
+            <div class="col-1 letter minute L 0">L</div>
+            <div class="col-1 letter minute O 0">O</div>
+            <div class="col-1 letter minute C 0">C</div>
+            <div class="col-1 letter minute K 0">K</div>
+            <div class="col-1 letter minute F 40 45">F</div>
+            <div class="col-1 letter minute O 40 45">O</div>
+            <div class="col-1 letter minute R 40 45">R</div>
+            <div class="col-1 letter minute T 40 45">T</div>
+            <div class="col-1 letter minute Y 40 45">Y</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-1 letter minute F 50 55">F</div>
+            <div class="col-1 letter minute I 50 55">I</div>
+            <div class="col-1 letter minute F 50 55">F</div>
+            <div class="col-1 letter minute T 50 55">T</div>
+            <div class="col-1 letter minute Y 50 55">Y</div>
+            <div class="col-1 letter minute F 5 25 35 45 55">F</div>
+            <div class="col-1 letter minute I 5 25 35 45 55">I</div>
+            <div class="col-1 letter minute V 5 25 35 45 55">V</div>
+            <div class="col-1 letter minute E 5 25 35 45 55">E</div>
+            <div class="col-1 letter minute O">O</div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script id="__bs_script__">//<![CDATA[ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname)); //]]></script>
+
+</body>
+</html>
